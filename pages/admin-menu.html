@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
+  <script src="../js/form-validation.js" type="module" defer></script>
+  <title>Alura Geek | Admin menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/logo-small.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/products.css">
+  <link rel="stylesheet" href="../css/admin-menu.css">
+  <link rel="stylesheet" href="../css/contact-us.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img class="logo" src="../assets/logo.png" alt="AluraGeek logo"></a>
+  </header>
+  <main>
+    <section class="products">
+      <div class="product__header">
+        <h2 class="product__type">All products</h2>
+        <a href="crud-product.html"><button class="blue-button">Add product</button></a>
+      </div>
+      <ul class="product__list">
+        <il class="product__list__element">
+          <img src="../assets/starwars-1.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">1</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/starwars-2.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">2</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/starwars-3.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">3</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/starwars-4.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">4</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/starwars-5.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">5</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/starwars-6.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">6</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/consoles-1.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">7</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/consoles-2.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">8</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/consoles-3.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">9</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/consoles-4.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">10</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/consoles-5.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">11</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/consoles-6.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">12</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/others-1.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">13</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/others-2.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">14</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/others-3.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">15</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/others-4.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">16</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/others-5.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">17</span></p>
+        </il>
+        <il class="product__list__element"> 
+          <img src="../assets/others-6.png" alt="" class="product__list__element--image">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-pen"></i>
+          <p class="product__name">Product name</p>
+          <p class="product__price">$ 99.99</p>
+          <p class="product-id-p">id: <span id="product-id">18</span></p>
+        </il>
+      </ul>
+    </section>
+    <section class="contact-us">
+      <div class="logo-info__container">
+        <img class="logo-noshadow" src="../assets/logo-noshadow.png" alt="AluraGeek logo">
+        <ul class="info__links">
+          <il><a class="info__link" href="#">About us</a></il>
+          <il><a class="info__link" href="#">Privacy policy</a></il>
+          <il><a class="info__link" href="#">Our stores</a></il>
+          <il><a class="info__link" href="#">I want to be a franchisee</a></il>
+          <il><a class="info__link" href="#">Advertise here</a></il>
+        </ul>
+      </div>
+      <form id="contact-us__form" class="general__form">
+        <legend class="contact-us__talk-to-us">Talk to us</legend>
+        <div>
+          <div class="form__input__container">
+            <input type="text" id="name" class="form__input--text" required placeholder=" " maxlength="40">
+            <label class="form__input__label" for="name">Name</label>
+          </div>
+          <span class="form__error-message"></span>
+        </div>
+        <div>
+          <div class="form__input__container">
+            <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" " maxlength="300"></textarea>
+            <label class="form__input__label" for="message">Message</label>
+          </div>
+          <span class="form__error-message"></span>
+        </div>
+        <input type="submit" class="blue-button" value="Send message">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p class="made-by">Made by Gerardo Gómez</p>
+    <div class="footer__links">
+      <a href="https://github.com/GeraOSF" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/geraosf/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+    </div>
+    <p class="made-by--year">2022</p>
+  </footer>
+</body>
+</html>

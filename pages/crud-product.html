@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/59cf79b5cf.js" crossorigin="anonymous"></script>
+  <script src="../js/form-validation.js" type="module" defer></script>
+  <script src="../js/crud-validation.js" type="module" defer></script>
+  <script src="../js/img-upload.js" type="module" defer></script>
+  <title>Alura Geek | Add/Edit Product</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/logo-small.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/contact-us.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/crud-product.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img class="logo" src="../assets/logo.png" alt="AluraGeek logo"></a>
+    <a href="admin-menu.html"><button class="white-button">Admin menu</button></a>
+  </header>
+  <main>
+    <section class="login">
+      <form id="crud-product__form" class="general__form">
+        <legend class="login__form__title">Add product</legend>
+
+        <div>
+          <div class="form__input__container login__input__container">
+            <input type="text" id="product-name" class="crud__input form__input--text" required placeholder=" " maxlength="20">
+            <label for="product-name" class="form__input__label">Product name</label>
+          </div>
+          <span class="form__error-message"></span>
+        </div>
+
+        <div>
+          <div class="form__input__container login__input__container">
+            <input type="text" id="category" class="crud__input form__input--text" required placeholder=" ">
+            <label for="category" class="form__input__label">Category</label>
+          </div>
+          <span class="form__error-message"></span>
+        </div>        
+
+        <div>
+          <div class="form__input__container login__input__container">
+            <input type="number" id="price" class="crud__input form__input--text" required placeholder=" " min="0.01" step="0.01">
+            <label for="price" class="form__input__label">Price</label>
+          </div>
+          <span class="form__error-message"></span>
+        </div>
+
+        <!-- image upload -->
+        <span>Upload image from local storage or use URL:</span>
+        <label class="switch">
+          <input type="checkbox" id="image-method">
+          <span class="slider round"></span>
+        </label>
+        <div class="method">
+          <div class="form__input__container login__input__container">
+            <input type="url" id="img-url" class="crud__input form__input--text" required placeholder=" ">
+            <label for="img-url" class="form__input__label">Image URL</label>
+          </div>
+          <span class="form__error-message"></span>
+        </div>
+        
+        <div class="method" hidden>
+          <div class="form__input__container login__input__container">
+            <input type="file" id="img-file" accept="image/*" class="crud__input form__input--text" required placeholder=" ">
+            <label for="img-file" class="form__input__label">Upload image</label>
+            <div class="image-display"></div>
+          </div>
+          <span class="form__error-message"></span>
+        </div>
+
+        <!--  -->
+
+        <div>
+          <div class="form__input__container login__input__container">
+            <textarea name="description" id="description" class="crud__input form__input--text" rows="10" required placeholder=" " maxlength="300"></textarea>
+            <label for="description" class="form__input__label">Description</label>
+          </div>
+          <span class="form__error-message"></span>
+        </div>
+
+        <input type="submit" id="add-edit-product__buton" class="blue-button form__button--login" value="Add">
+      </form>
+    </section>
+    
+    <section class="contact-us">
+      <div class="logo-info__container">
+        <img class="logo-noshadow" src="../assets/logo-noshadow.png" alt="AluraGeek logo">
+        <ul class="info__links">
+          <il><a class="info__link" href="#">About us</a></il>
+          <il><a class="info__link" href="#">Privacy policy</a></il>
+          <il><a class="info__link" href="#">Our stores</a></il>
+          <il><a class="info__link" href="#">I want to be a franchisee</a></il>
+          <il><a class="info__link" href="#">Advertise here</a></il>
+        </ul>
+      </div>
+      <form id="contact-us__form" class="general__form">
+        <legend class="contact-us__talk-to-us">Talk to us</legend>
+        <div>
+          <div class="form__input__container">
+            <input type="text" id="name" class="form__input--text" required placeholder=" " maxlength="40">
+            <label class="form__input__label" for="name">Name</label>
+          </div>
+          <span class="form__error-message"></span>
+        </div>
+        <div>
+          <div class="form__input__container">
+            <textarea name="message" id="message" class="form__input--text" rows="10" required placeholder=" " maxlength="300"></textarea>
+            <label class="form__input__label" for="message">Message</label>
+          </div>
+          <span class="form__error-message"></span>
+        </div>
+        <input type="submit" class="blue-button" value="Send message">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p class="made-by">Made by Gerardo Gómez</p>
+    <div class="footer__links">
+      <a href="https://github.com/GeraOSF" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/geraosf/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+    </div>
+    <p class="made-by--year">2022</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.promo {
+  position: relative;
+  padding: 200px 0;
+  background-color: var(--color-light-gray);
+  background-image: url("../assets/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4rem;
+}
+
+.promo__content {
+  position: absolute;
+  color: #fefefe;
+  bottom: 10%;
+  left: 10%;
+}
+
+.promo__text {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+
+.promo__text--details {
+  font-size: 1.375rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .promo {
+    background-blend-mode: multiply;
+  }
+}

@@ -1,0 +1,63 @@
+.login {
+  padding: 5rem 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+
+.login__form__title {
+  align-self: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--color-gray);
+  margin-bottom: 1rem;
+}
+
+.form__button--login {
+  min-width: 21vw;
+  height: 4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.not-admin__error-message {
+  visibility: hidden;
+  color: red;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-family: initial;
+  font-size: 0.8rem;
+  background-color: var(--color-gray);
+  color: white;
+  text-align: center;
+  padding: 5px 2px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -65px;
+  margin-top: 5px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--color-gray) transparent;
+}

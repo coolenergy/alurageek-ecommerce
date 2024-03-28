@@ -1,0 +1,94 @@
+:root {
+  --color-blue: #2A7AE4;
+  --color-dark-blue: #1a69d1;
+  --color-light-blue: #EAF2FD;
+  --color-white: #FEFEFE;
+  --color-gray: #464646;
+  --color-light-gray: #A2A2A2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--color-white);
+}
+
+.white-button {
+  width: 12rem;
+  height: 3.5rem;
+  border: solid #2A7AE4 2px;
+  background-color: #fefefe;
+  color: #2A7AE4;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.white-button:hover {
+  background-color: #2A7AE4;
+  color: #fefefe;
+}
+
+.blue-button {
+  cursor: pointer;
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--color-blue);
+  border: none;
+  color: var(--color-white);
+}
+
+.blue-button:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.general__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  line-height: 1.5rem;
+}
+
+.form__input__container {
+  background-color: var(--color-white);
+  border: solid 2px transparent;
+  padding: 5px;
+  padding-top: 0.9rem;
+  position: relative;
+  box-shadow: 2px 3px 1px -1px var(--color-light-gray);
+}
+
+.form__input__container:focus-within {
+  border: solid 2px var(--color-blue);
+}
+
+.form__input--text {
+  font-size: initial;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  min-width: 20vw;
+}
+
+.form__input__label {
+  position: absolute;
+  left: 5px;
+  cursor: text;
+  user-select: none;
+  color: var(--color-light-gray);
+  transform-origin: 0 0;
+  transition: transform 0.2s;
+}
+
+.form__input--text:focus + .form__input__label, .form__input--text:not(:placeholder-shown) + .form__input__label {
+  transform: translateY(-1rem) scale(0.8);
+}
+
+.form__error-message {
+  color: red;
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+}

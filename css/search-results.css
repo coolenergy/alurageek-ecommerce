@@ -1,0 +1,19 @@
+main {
+  position: relative;
+}
+
+.search__results-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 35%);
+  width: 70%;
+  z-index: 1;
+  background-color: var(--color-white);
+  padding: 2rem;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 1rem;
+  border: 10px solid var(--color-blue);
+  border-top: none;
+}

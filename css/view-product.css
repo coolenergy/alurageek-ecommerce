@@ -1,0 +1,32 @@
+.product__section {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.product__section__container {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product__info__container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.product__img {
+  width: 400px;
+  height: 400px;
+}
+
+.similar-products__section {
+  margin: 10rem 10vw;
+}
+
+.similar-products__title {
+  text-align: center;
+}

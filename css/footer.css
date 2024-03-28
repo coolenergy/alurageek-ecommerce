@@ -1,0 +1,15 @@
+footer {
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-gray);
+}
+
+.footer__links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.fa-github, .fa-linkedin {
+  color: var(--color-blue);
+}
